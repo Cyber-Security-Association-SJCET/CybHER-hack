@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Jayalakshmi J Nair</title>
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+            background-color: #e6f3ff;
+            font-size: 18px;
+            color: #4a4a4a;
+            line-height: 1.6;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 0 20px;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards; /* Fade in the whole body */
+        }
+
+        header {
+            background: #b3dcff;
+            color: #2c3e50;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            width: 100%;
+            border-bottom: 3px solid #b3dcff;
+            animation: scaleUp 1s ease-out; /* Header scale-up effect */
+            position: relative; /* For the wave effect */
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        /* Bubble effect */
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            animation: float-bubble 8s infinite;
+            pointer-events: none; /* Prevents interfering with other elements */
+        }
+
+        /* Bubble animation */
+        @keyframes float-bubble {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-100px) translateX(20px);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(0) translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Section styles */
+        section {
+            background: #fff;
+            padding: 30px;
+            margin: 20px;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(41, 128, 185, 0.1);
+            opacity: 0;
+            animation: fadeIn 2s forwards; /* Fade-in animation for each section */
+            transition: transform 0.3s ease;
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            color: #4a4a4a;
+        }
+
+        /* Contact styling */
+        .contact {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        /* Make the email and email id appear in one line */
+        .contact a {
+            display: inline-block;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 40px;
+            font-size: 16px;
+            color: #4a4a4a;
+        }
+
+        /* Hover pop effect */
+        section:hover {
+            transform: scale(1.05); /* Slightly scale up on hover */
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.8);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Bubble effect -->
+    <div class="bubble" style="left: 10%; width: 25px; height: 25px;"></div>
+    <div class="bubble" style="left: 30%; width: 18px; height: 18px;"></div>
+    <div class="bubble" style="left: 50%; width: 22px; height: 22px;"></div>
+    <div class="bubble" style="left: 70%; width: 28px; height: 28px;"></div>
+    <div class="bubble" style="left: 80%; width: 20px; height: 20px;"></div>
+    <h1>Jayalakshmi J Nair</h1>
+    <p>Welcome to my personal website!</p>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! My name is Jayalakshmi J Nair, and I am currently a 4th-semester B.Tech student in Computer Science and Engineering (Cybersecurity) at St. Joseph's College of Engineering and Technology, Palai. I am passionate about cybersecurity and enjoy exploring topics related to cybersecurity. I thrive on problem-solving and creativity and enjoy both independent and collaborative work environments.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to connect, feel free to reach out to me:</p>
+    <p class="contact">Email: <a href="mailto:jayalakshmijnair75@gmail.com">jayalakshmijnair75@gmail.com</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Jayalakshmi J Nair. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
